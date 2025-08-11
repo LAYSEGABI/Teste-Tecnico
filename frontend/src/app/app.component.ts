@@ -9,7 +9,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   standalone: true,
   imports: [RouterOutlet, CommonModule, FormsModule, HttpClientModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
   title = 'Todo List';
@@ -27,8 +27,8 @@ export class AppComponent implements OnInit {
       (erro) => {
         console.error('Erro ao carregar tarefas:', erro);
         this.todos = [
-          { id: 1, title: 'Tarefa offline 1', completed: false },
-          { id: 2, title: 'Tarefa offline 2', completed: true }
+          //{ id: 1, title: 'Tarefa offline 1', completed: false },
+          //{ id: 2, title: 'Tarefa offline 2', completed: true }
         ];
       }
     );
